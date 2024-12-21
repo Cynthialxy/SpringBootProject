@@ -19,7 +19,7 @@ public class FirstController {
     @Autowired
     private UserService userService;
 
-    //?传一个参
+    //?传一个参数
     @ApiOperation("获取id")
     @GetMapping("test")
     public Result testGet(Integer id){
@@ -27,7 +27,7 @@ public class FirstController {
         return Result.ok().data("user",id);
     }
 
-    //?传两个参
+    //?传两个参数
     @ApiOperation("获取id和name")
     @GetMapping("test2")
     public Result testGet2(Integer id, String name){
@@ -35,7 +35,7 @@ public class FirstController {
         return Result.ok().data("user",id).data("name",name);
     }
 
-    //`/`传一个参
+    //`/`传一个参数
     @ApiOperation("获取id")
     @GetMapping("path/{id}")
     public Result testPath2(@PathVariable Integer id){
