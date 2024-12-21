@@ -67,6 +67,7 @@ public class FirstController {
         return Result.ok().data("user",user);
     }
 
+    //获取用户列表
     @ApiOperation("获取用户列表")
     @GetMapping("getUsers")
     public Result getAll(){
